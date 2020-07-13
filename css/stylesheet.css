@@ -32,6 +32,11 @@ body {
     border: none;
     background: none;
     display: none;
+    outline: 0;
+}
+
+#nav-toggle {
+    outline: 0;
 }
 
 #nav-toggle span {
@@ -85,6 +90,11 @@ body {
 }
 
 @media (max-width: 850px) {
+    #nav .brand {
+        font-size: 22px;
+        padding: 0;
+    }
+
     #nav-toggle {
         display: inline-block;
     }
