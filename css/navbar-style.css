@@ -5,26 +5,10 @@
  *
  */
 
-body {
-    font-family: Tahoma;
-    margin: 0;
-    padding: 0;
-}
-
-@supports (backdrop-filter: blur(20px)) or (-webkit-backdrop-filter: blur(20px)) {
-    .acrylic {
-        -webkit-backdrop-filter: blur(20px);
-        backdrop-filter: blur(20px) saturate(125%);
-    }
-}
-
-main {
-    margin-top: 80px;
-}
-
 /*===============
  * Navigation bar
  *===============*/
+
 #nav {
     position: fixed;
     top: 0;
@@ -154,6 +138,7 @@ main {
     }
 }
 
+/* small screen */
 @media (max-width: 850px) {
     #nav .brand {
         font-size: 22px;
@@ -184,10 +169,16 @@ main {
     }
 
     @supports (backdrop-filter: blur(20px)) or (-webkit-backdrop-filter: blur(20px)) {
+        .acrylic {
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px) saturate(125%);
+        }
+
         #nav ul {
-            background-color: rgba(96, 108, 56, 0.9) !important;
+            background-color: rgba(255 , 255, 255, 0.3) !important;
         }
     }
+    
 
     #nav ul li {
         display: block;
@@ -200,14 +191,12 @@ main {
         background: none;
     }
 
+    #nav ul li a {
+        font-size: 20px;
+    }
+
 }
 
 #nav-list.expand {
     left: 0;
-}
-
-.content {
-    padding: 0 10px;
-    max-width: 750px;
-    margin: 0 auto;
 }

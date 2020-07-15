@@ -7,6 +7,11 @@ jQuery(document).ready(function ($) {
             closeSideMenu();
         }
     });
+
+    $("a").click(function() {
+        if(isSideMenuOpen())
+            closeSideMenu();
+    });
     
 });
 
@@ -19,6 +24,10 @@ function closeSideMenu() {
     $("#nav-toggle").data("toggle", "collapse");
     $("#nav-list").removeClass("expand");
 };
+
+function isSideMenuOpen() {
+    return $("#nav-toggle").data("toggle") === "expand";
+}
 
 $(document).swipe({
     threshold:150,
