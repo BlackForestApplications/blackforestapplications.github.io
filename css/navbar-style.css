@@ -17,7 +17,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #283618;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px -2px gray;
     height: 80px;
     width: 100%;
     transition: height 0.5s ease;
@@ -44,12 +45,12 @@
 #nav-toggle span {
     margin: 0 10px;
     font-size: 32px;
-    color: #DDA15E;
+    color: #000;
     transition: color 0.33s ease;
 }
 
 #nav-toggle span:hover {
-    color: rgba(221, 161, 94, 0.8);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 #nav-toggle:active {
@@ -62,7 +63,7 @@
     vertical-align: top;
     padding: 0 10px;
     font-weight: bold;
-    color: #DDA15E;
+    color: #000;
 }
 
 #nav ul {
@@ -102,6 +103,7 @@
     background: tomato;
     transition: width 0.3s ease 0s, right 0.3s ease 0s;
     width: 0;
+    border-radius: 20px;
 }
 
 #nav ul li:hover:after { 
@@ -111,7 +113,7 @@
 
 #nav ul li a {
     font-size: 18px;
-    color: #DDA15E;
+    color: #000;
 }
 
 #nav-selector {
@@ -165,7 +167,7 @@
         padding: 0;
         text-align: center;
         transition: all 0.5s;
-        background-color: rgba(96, 108, 56, 0.99);
+        background-color: rgba(255, 255, 255, 1);
     }
 
     @supports (backdrop-filter: blur(20px)) or (-webkit-backdrop-filter: blur(20px)) {
