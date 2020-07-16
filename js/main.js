@@ -1,5 +1,13 @@
 jQuery(document).ready(function ($) {
 
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('#nav').addClass('scrolled');
+        } else {
+            $('#nav').removeClass('scrolled');
+        }
+    });
+
     $("#nav-toggle").click(function() {
         if($(this).data("toggle") === "collapse") {
             openSideMenu();
@@ -18,11 +26,13 @@ jQuery(document).ready(function ($) {
 function openSideMenu() {
     $("#nav-toggle").data("toggle", "expand");
     $("#nav-list").addClass("expand");
+    $("#nav").addClass("open");
 };
 
 function closeSideMenu() {
     $("#nav-toggle").data("toggle", "collapse");
     $("#nav-list").removeClass("expand");
+    $("#nav").removeClass("open");
 };
 
 function isSideMenuOpen() {
