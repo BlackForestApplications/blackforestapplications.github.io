@@ -7,6 +7,7 @@
     <!--Stylesheets-->
     <link rel="stylesheet" type="text/css" href="./css/root-style.css">
     <link rel="stylesheet" type="text/css" href="./css/navbar-style.css">
+    <link rel="stylesheet" type="text/css" href="./css/services-slider.css">
     <!--FontAwesome-->
     <script defer src="./js/all.js"></script>
     <!--Jquery-->
@@ -15,6 +16,7 @@
     <script defer type="text/javascript" src="./js/jquery.touchSwipe.min.js"></script>
     <!--JavaScripts-->
     <script defer src="./js/main.js"></script>
+    <script defer src="./js/services-slider.js"></script>
 </head>
 <body>
    <nav id="nav" >
@@ -24,9 +26,9 @@
        <label class="brand">BlackForestApplications</label>
        <ul id="nav-list" class="acrylic">
            <li><a href="#home">Home</a></li>
+           <li><a href="#services">Leistungen</a></li>
            <li><a href="#team">Team</a></li>
            <li><a href="#projects">Projekte</a></li>
-           <li><a href="#services">Leistungen</a></li>
            <li><a href="#contact">Kontakt</a></li>
        </ul>
    </nav>
@@ -42,6 +44,52 @@
     </section>
    <main>
        <div class="content">
+            <section id="services">
+                <h1>Leistungen</h1>
+                <div class="services-content">
+
+                    <div class="services-slider-wrapper">
+                        <div class="services-slider">
+                            <div class="service-item initial shadow-box">
+                                <h1>Apps</h1>
+                                <div class="service-content">
+                                    <p>Wir entwickeln moderne, benutzerfreundliche Android Apps. Unsere Apps folgen dem Material Design und besitzen einen Dark Mode.</p>
+                                </div>
+                            </div>
+                            <div class="service-item shadow-box">
+                                <h1>Desktop</h1>
+                                <div class="service-content">
+                                    <p>Betriebssystemunabhängige Desktop Anwendungen entwickeln wir auch.</p>
+                                </div>
+                            </div>
+                            <div class="service-item shadow-box">
+                                <h1>Webseiten</h1>
+                                <div class="service-content">
+                                    <p>Natürlich können wir auch Webseite, wie diese hier, erstellen.</p>
+                                </div>
+                            </div>
+                            <div class="service-item shadow-box">
+                                <h1>Musik</h1>
+                                <div class="service-content">
+                                    <p>Und damit Ihre Party nicht langweilig wird, produzieren wir sicke Beats!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services-controls">
+                        <a class="services-slider-next"><i class="fas fa-chevron-circle-up"></i></a>
+                        <ul>
+                            <li>Apps</li>
+                            <li>Desktop </li>
+                            <li>Webseiten</li>
+                            <li>Musik</li>
+                        </ul>
+                        <a class="services-slider-prev"><i class="fas fa-chevron-circle-down"></i></a>
+                    </div>
+            
+                </div>
+            </section>
             <hr>
             <section id="team">
                 <h1>Team</h1>
@@ -55,11 +103,6 @@
             <hr>
             <section id="projects">
                 <h1>Projekte</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dignissimos vel facere asperiores dolorem repellat placeat, maxime nobis ipsam suscipit sint vero quaerat aspernatur voluptatem et eaque veniam quos blanditiis!</p>
-            </section>
-            <hr>
-            <section id="services">
-                <h1>Leistungen</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dignissimos vel facere asperiores dolorem repellat placeat, maxime nobis ipsam suscipit sint vero quaerat aspernatur voluptatem et eaque veniam quos blanditiis!</p>
             </section>
             <section id="contact">
