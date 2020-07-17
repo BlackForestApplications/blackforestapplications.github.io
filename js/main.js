@@ -1,5 +1,6 @@
 jQuery(document).ready(function ($) {
 
+    /* toggle transparant navbar on scroll */
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('#nav').addClass('scrolled');
@@ -8,6 +9,7 @@ jQuery(document).ready(function ($) {
         }
     });
 
+    /* Mobile SideMenu toggle */
     $("#nav-toggle").click(function() {
         if($(this).data("toggle") === "collapse") {
             openSideMenu();
@@ -16,13 +18,36 @@ jQuery(document).ready(function ($) {
         }
     });
 
+    /* Close SideMenu on anchor click */
     $("a").click(function() {
         if(isSideMenuOpen())
             closeSideMenu();
     });
+
+    /* Smooth Scroll on anchor click */
+    $('a[href*="#"]')
+        .not('[href="#"]')
+        .click(function(event) {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    event.preventDefault();
+                    $('html,body').animate({
+                        // 80px offset due to the navbar
+                        scrollTop: target.offset().top - 80
+                    }, 500);
+                    return false;
+                }
+            }
+    });
     
 });
 
+/*
+    Mobile SideMenu functions
+*/
 function openSideMenu() {
     $("#nav-toggle").data("toggle", "expand");
     $("#nav-list").addClass("expand");
@@ -39,6 +64,9 @@ function isSideMenuOpen() {
     return $("#nav-toggle").data("toggle") === "expand";
 }
 
+/* 
+    Mobile SideMenu open on swipe
+*/
 $(document).swipe({
     threshold:150,
     maxTimeThreshold:1000,
