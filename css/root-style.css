@@ -140,6 +140,8 @@ section h1 {
     flex-direction: row;
     flex-wrap: wrap-reverse;
     align-items: stretch;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .services-slider-wrapper {
