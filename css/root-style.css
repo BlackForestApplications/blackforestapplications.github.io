@@ -12,6 +12,11 @@ body {
     background-color: #ffffff;
 }
 
+.dark {
+    background-color: #121212;
+    color: #cdcdcd;
+}
+
 main {
     margin-top: 80px;
     z-index: 100;
@@ -30,14 +35,31 @@ main {
     box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.6);
 }
 
+.icon-btn {
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    color: rgba(120,120,120,1);
+    cursor: pointer;
+}
+.icon-btn:focus {
+    outline: 0;
+}
+.icon-btn:active {
+    scale: 0.95;
+}
+.icon-btn:hover {
+    color: rgba(120,120,120,.75);
+}
+
 .content {
-    padding: 0 10px;
+    padding: 0;
     margin: 0 auto;
 }
 
 section {
-    width: 100%;
     margin: 10px 0;
+    padding: 0 10px;
 }
 
 hr {
@@ -46,6 +68,10 @@ hr {
     max-width: 90%;
     margin: 0 auto;
     padding: 0;
+}
+
+.dark hr {
+    border-top: 1px solid #666666;
 }
 
 section p {
@@ -63,18 +89,29 @@ section h1 {
     text-align: center;
 }
 
+.dark section h1 {
+    color: #e0e0e0;
+}
+
 /*===============
  * Hero style
  *===============*/
 .hero {
     background: url(/img/Tag.jpg);
-    height: 70vh;
-    width: 100%;
-    z-index: 0;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 70vh;
+    width: 100%;
+    z-index: 0;
     position: relative;
+}
+
+.dark .hero {
+    background: url(/img/Nacht.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-container {
@@ -127,6 +164,7 @@ section h1 {
 /* Home / Hero */
 #home {
     margin: 0;
+    padding: 0;
 }
 
 /* Services */
@@ -180,6 +218,14 @@ section h1 {
     border-image-slice: 1;
     margin-top: 20px;
     padding: 0;
+}
+
+.dark #contact {
+    background: #191919; 
+    border-top: 2px solid #777777;
+    border-bottom: 2px solid #777777;
+    border-image: linear-gradient(90deg, #191919 10%, #2f2f2f 40%, #2f2f2f 60%, #191919 90%);
+    border-image-slice: 1;
 }
 
 .contact-box {
@@ -257,4 +303,14 @@ section h1 {
  .footer-content {
     color: #777777;
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+ }
+
+ footer .dark-mode-container {
+    float: right;
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+    margin-left: auto;
  }

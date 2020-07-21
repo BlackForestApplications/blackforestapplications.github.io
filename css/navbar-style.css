@@ -26,9 +26,20 @@
     box-shadow: 0 4px 15px -2px gray;
 }
 
+.dark #nav.scrolled,
+.dark #nav.open {
+    background-color: #191919;
+    box-shadow: none;
+}
+
 #nav.scrolled *,
 #nav.open * {
     color: #000000 !important;
+}
+
+.dark #nav.scrolled *,
+.dark #nav.open * {
+    color: #ffffff !important;
 }
 
 #nav * {
@@ -175,6 +186,10 @@
         background-color: rgba(255, 255, 255, 1);
     }
 
+    .dark #nav ul {
+        background-color: #222222;
+    }
+
     @supports (backdrop-filter: blur(20px)) or (-webkit-backdrop-filter: blur(20px)) {
         .acrylic {
             -webkit-backdrop-filter: blur(20px);
@@ -183,6 +198,10 @@
 
         #nav ul {
             background-color: rgba(255 , 255, 255, 0.3) !important;
+        }
+
+        .dark #nav ul {
+            background-color: rgba(0 , 0, 0, 0.3) !important;
         }
     }
     
