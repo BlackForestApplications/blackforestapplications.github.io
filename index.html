@@ -47,33 +47,33 @@
    <main>
        <div class="content">
             <section id="services">
-                <h1>Leistungen</h1>
+                <h1 data-lang="hd1" >Leistungen</h1>
                 <div class="services-content">
 
                     <div class="services-slider-wrapper">
                         <div class="services-slider">
                             <div class="service-item initial shadow-box">
-                                <h1>Apps</h1>
+                                <h1 data-lang="hd2">Apps</h1>
                                 <div class="service-content">
-                                    <p>Wir entwickeln moderne, benutzerfreundliche Android Apps. Unsere Apps folgen dem Material Design und besitzen einen Dark Mode.</p>
+                                    <p data-lang="tx1">Wir entwickeln moderne, benutzerfreundliche Android Apps. Unsere Apps folgen dem Material Design und besitzen einen Dark Mode.</p>
                                 </div>
                             </div>
                             <div class="service-item shadow-box">
-                                <h1>Desktop</h1>
+                                <h1 data-lang="hd3">Desktop</h1>
                                 <div class="service-content">
-                                    <p>Plattformunabhängige Desktop Anwendungen entwickeln wir auch.</p>
+                                    <p data-lang="tx2">Plattformunabhängige Desktop Anwendungen entwickeln wir auch.</p>
                                 </div>
                             </div>
                             <div class="service-item shadow-box">
-                                <h1>Webseiten</h1>
+                                <h1 data-lang="hd4">Webseiten</h1>
                                 <div class="service-content">
-                                    <p>Natürlich können wir auch Webseite, wie diese hier, erstellen.</p>
+                                    <p data-lang="tx3">Natürlich können wir auch Webseite, wie diese hier, erstellen.</p>
                                 </div>
                             </div>
                             <div class="service-item shadow-box">
-                                <h1>Musik</h1>
+                                <h1 data-lang="hd5">Musik</h1>
                                 <div class="service-content">
-                                    <p>Und damit Ihre Party nicht langweilig wird, produzieren wir sicke Beats!</p>
+                                    <p data-lang="tx4">Und damit Ihre Party nicht langweilig wird, produzieren wir sicke Beats!</p>
                                 </div>
                             </div>
                         </div>
@@ -82,10 +82,10 @@
                     <div class="services-controls">
                         <a class="services-slider-next"><i class="fas fa-chevron-circle-up"></i></a>
                         <ul>
-                            <li>Apps</li>
-                            <li>Desktop </li>
-                            <li>Webseiten</li>
-                            <li>Musik</li>
+                            <li data-lang="hd2">Apps</li>
+                            <li data-lang="hd3">Desktop </li>
+                            <li data-lang="hd4">Webseiten</li>
+                            <li data-lang="hd5">Musik</li>
                         </ul>
                         <a class="services-slider-prev"><i class="fas fa-chevron-circle-down"></i></a>
                     </div>
@@ -94,23 +94,18 @@
             </section>
             <hr>
             <section id="team">
-                <h1>Team</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dignissimos vel facere asperiores dolorem repellat placeat, maxime nobis ipsam suscipit sint vero quaerat aspernatur voluptatem et eaque veniam quos blanditiis!</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dignissimos vel facere asperiores dolorem repellat placeat, maxime nobis ipsam suscipit sint vero quaerat aspernatur voluptatem et eaque veniam quos blanditiis!</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dignissimos vel facere asperiores dolorem repellat placeat, maxime nobis ipsam suscipit sint vero quaerat aspernatur voluptatem et eaque veniam quos blanditiis!</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dignissimos vel facere asperiores dolorem repellat placeat, maxime nobis ipsam suscipit sint vero quaerat aspernatur voluptatem et eaque veniam quos blanditiis!</p>
+                <h1 data-lang="hd6">Team</h1>
+                <p data-lang="tx5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dignissimos vel facere asperiores dolorem repellat placeat, maxime nobis ipsam suscipit sint vero quaerat aspernatur voluptatem et eaque veniam quos blanditiis!</p>
             </section>
             <hr>
             <section id="projects">
-                <h1>Projekte</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dignissimos vel facere asperiores dolorem repellat placeat, maxime nobis ipsam suscipit sint vero quaerat aspernatur voluptatem et eaque veniam quos blanditiis!</p>
+                <h1 data-lang="hd7">Projekte</h1>
+                <p data-lang="tx6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dignissimos vel facere asperiores dolorem repellat placeat, maxime nobis ipsam suscipit sint vero quaerat aspernatur voluptatem et eaque veniam quos blanditiis!</p>
             </section>
             <section id="contact">
                 <div class="contact-box">
                     <div class="heading">
-                        <h1>Kontaktieren Sie uns</h1>
+                        <h1 data-lang="hd8">Kontaktieren Sie uns</h1>
                     </div>
                     <div class="contact-actions">
                         <div class="contact-items shadow-box">
@@ -126,7 +121,7 @@
    </main>
    <footer>
         <div class="footer-social">
-            <p>Folge uns auf</p>
+            <p data-lang="tx7">Folge uns auf</p>
             <a href="https://www.youtube.com/channel/UCIcuezaBO_w3LrCL3hi_s9Q"><i class="fab fa-youtube"></i></a>
             <a href="https://www.instagram.com/blackforestapplications"><i class="fab fa-instagram"></i></a>
         </div>
@@ -138,6 +133,14 @@
                 <i class="fas fa-adjust fa-lg"></i>
             </button>
         </div>
+       </div>
+       <div class="dropdown">
+         <select name="translations" id="language-select" onchange="setLanguage(this.value);">
+             <option value="de">Deutsch</option>
+             <option value="en">English</option>
+             <option value="es">Español</option>
+             <option value="ja">Japanese</option>
+         </select>
        </div>
    </footer>
 </body>

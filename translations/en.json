@@ -5,5 +5,22 @@
     "nav4": "Projects",
     "nav5": "Contact",
     "hero1": "Your Problem is our Solution!",
-    "hero2": "Our services"
+    "hero2": "Our services",
+
+    "hd1": "Services",
+    "hd2": "Apps",
+    "hd3": "Desktop",
+    "hd4": "Websites",
+    "hd5": "Music",
+    "hd6": "Team",
+    "hd7": "Projects",
+    "hd8": "Please contact us",
+
+    "tx1": "We develop modern, user-friendly Android Apps. Our apps follow the material design and have a dark mode.",
+    "tx2": "We also develop platform independent desktop applications.",
+    "tx3": "Of course we can also create websites like this one.",
+    "tx4": "And so that your party doesn't get boring, we produce sick beats!",
+    "tx5": "Error",
+    "tx6": "Error",
+    "tx7": "Error"
 }

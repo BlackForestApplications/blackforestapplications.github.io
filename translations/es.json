@@ -1,0 +1,26 @@
+{
+    "nav1": "Home",
+    "nav2": "Servicios",
+    "nav3": "Team",
+    "nav4": "Proyectos",
+    "nav5": "Contacte",
+    "hero1": "¡Tu problema es nuestra solución!",
+    "hero2": "Nuestros servicios",
+
+    "hd1": "Servicios",
+    "hd2": "Apps",
+    "hd3": "Escritorio",
+    "hd4": "Sitios web",
+    "hd5": "Música",
+    "hd6": "Equipo",
+    "hd7": "Proyectos",
+    "hd8": "Por favor, contáctenos",
+
+    "tx1": "Desarrollamos aplicaciones modernas y fáciles de usar para Android. Nuestras aplicaciones siguen el diseño del material y tienen un modo oscuro",
+    "tx2": "También desarrollamos aplicaciones de escritorio independientes de la plataforma",
+    "tx3": "Por supuesto que también podemos crear sitios web como este",
+    "tx4": "Y para que tu fiesta no se aburra, producimos ritmos enfermizos",
+    "tx5": "Error",
+    "tx6": "Error",
+    "tx7": "Error"
+}

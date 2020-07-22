@@ -70,7 +70,7 @@ function isSideMenuOpen() {
 $(document).swipe({
     threshold:150,
     maxTimeThreshold:1000,
-    excludedElements: $.fn.swipe.defaults.excludedElements+", p, a, h1, h2, h3",
+    excludedElements: $.fn.swipe.defaults.excludedElements+", p, a, h1, h2, h3, select",
     swipe:function(event, direction, distance, duration, fingerCount)
         {
             if(direction == "right")
