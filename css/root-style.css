@@ -275,6 +275,10 @@ section h1 {
     background-color: #222222;
 }
 
+#credits {
+    text-align: center;
+}
+
 /*===============
  * Footer
  *===============*/
@@ -298,26 +302,39 @@ section h1 {
     color: #666666;
 }
 
- .footer-social p {
-     font-size: 1.2rem;
-     margin-bottom: 5px;
- }
+.footer-social p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
 
- .footer-content {
+.footer-content {
+color: #777777;
+margin-top: 20px;
+display: flex;
+flex-direction: row;
+}
+
+.flex-right-float,
+footer .dark-mode-container,
+footer .dropdown-container {
+float: right;
+margin: 0;
+padding: 0;
+align-self: flex-end;
+margin-left: auto;
+}
+
+footer .dark-mode-container,
+footer .dropdown-container {
+    margin-left: 10px;
+}
+
+#language-select {
+    border: none;
+    background-color: #dcdcdc;
+    padding: 2px;
+    border-radius: 3px;
+    outline: none;
     color: #777777;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
- }
-
- footer .dark-mode-container {
-    float: right;
-    margin: 0;
-    padding: 0;
-    align-self: flex-end;
-    margin-left: auto;
- }
-
- #language-select {
-     
- }
+    cursor: pointer;
+}

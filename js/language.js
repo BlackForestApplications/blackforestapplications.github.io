@@ -59,6 +59,9 @@ function changeLanguage() {
             
         });
 
+        // set current language as selected
+        $("#language-select").value = lang;
+
     }
 }
 

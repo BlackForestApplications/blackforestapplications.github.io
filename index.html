@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
     <title>BlackForestApplications</title>
     <!--Stylesheets-->
     <link rel="stylesheet" type="text/css" href="./css/root-style.css">
@@ -117,6 +118,10 @@
                     </div>
                 </div>
             </section>
+            <section id="credits">
+                <h2>Credits</h2>
+                <p>Icon by Vinyks</p>
+            </section>
        </div>
    </main>
    <footer>
@@ -125,23 +130,27 @@
             <a href="https://www.youtube.com/channel/UCIcuezaBO_w3LrCL3hi_s9Q"><i class="fab fa-youtube"></i></a>
             <a href="https://www.instagram.com/blackforestapplications"><i class="fab fa-instagram"></i></a>
         </div>
-       <div class="footer-content">
-           <label>&copy; BlackForestApplications</label>
-
-        <div class="dark-mode-container">
-            <button onclick="toggleDarkMode();" class="icon-btn" title="Toggle Dark Mode">
-                <i class="fas fa-adjust fa-lg"></i>
-            </button>
+        <div class="footer-content">
+            <label>&copy; BlackForestApplications</label>
+            <div class="flex-right-float">
+                <div class="dark-mode-container">
+                    <button onclick="toggleDarkMode();" class="icon-btn" title="Toggle Dark Mode">
+                        <i class="fas fa-adjust fa-lg"></i>
+                    </button>
+                </div>
+                <div class="dropdown-container">
+                    <span class="select-span">
+                        <select name="translations" id="language-select" onchange="setLanguage(this.value);">
+                            <option value="de">Deutsch</option>
+                            <option value="en">English</option>
+                            <option value="es">Español</option>
+                            <option value="ru">Russian</option>
+                            <option value="ja">Japanese</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
         </div>
-       </div>
-       <div class="dropdown">
-         <select name="translations" id="language-select" onchange="setLanguage(this.value);">
-             <option value="de">Deutsch</option>
-             <option value="en">English</option>
-             <option value="es">Español</option>
-             <option value="ja">Japanese</option>
-         </select>
-       </div>
    </footer>
 </body>
 </html>
