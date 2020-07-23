@@ -63,6 +63,8 @@ function changeLanguage() {
         $("#language-select").value = lang;
 
     }
+
+    uncensor();
 }
 
 function setLanguage(langCode) {

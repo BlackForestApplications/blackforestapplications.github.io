@@ -162,6 +162,28 @@ section h1 {
  * Section styles
  *===============*/
 /* Home / Hero */
+h1.loadtext,
+h2.loadtext,
+h3.loadtext {
+    background-color: #222222;
+    border-radius: 5px;
+    margin: 10px 20px;
+    color: #222222 !important;
+}
+
+p.loadtext,
+a.loadtext,
+li.loadtext {
+    background-color: #222222;
+    border-radius: 5px;
+    margin: 10px 20px;
+    color: #222222 !important;
+}
+
+.hero .loadtext {
+    display: none;
+}
+
 #home {
     margin: 0;
     padding: 0;
@@ -308,20 +330,20 @@ section h1 {
 }
 
 .footer-content {
-color: #777777;
-margin-top: 20px;
-display: flex;
-flex-direction: row;
+    color: #777777;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 .flex-right-float,
 footer .dark-mode-container,
 footer .dropdown-container {
-float: right;
-margin: 0;
-padding: 0;
-align-self: flex-end;
-margin-left: auto;
+    float: right;
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+    margin-left: auto;
 }
 
 footer .dark-mode-container,
@@ -330,11 +352,34 @@ footer .dropdown-container {
 }
 
 #language-select {
+    width: 100px;
     border: none;
     background-color: #dcdcdc;
-    padding: 2px;
+    padding: 4px;
     border-radius: 3px;
     outline: none;
     color: #777777;
     cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.dark #language-select {
+    background-color: #222222;
+    
+}
+
+.select-span {
+    position: relative;
+}
+
+.select-span::after {
+    content: '⯆';
+    font-size: 12px;
+    position: absolute;
+    top: -1px;
+    right: 6px;
+    color: #777777;
+    pointer-events: none;
 }
