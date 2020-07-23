@@ -126,7 +126,7 @@ section h1 {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    text-shadow: 1px 1px 8px #000;
+    text-shadow: 1px 1px 8px #000000;
 }
 
 .hero h2 {
@@ -165,22 +165,37 @@ section h1 {
 h1.loadtext,
 h2.loadtext,
 h3.loadtext {
-    background-color: #222222;
+    background-color: #cdcdcd;
     border-radius: 5px;
     margin: 10px 20px;
-    color: #222222 !important;
+    color: #cdcdcd !important;
 }
 
 p.loadtext,
 a.loadtext,
 li.loadtext {
-    background-color: #222222;
+    background-color: #cdcdcd;
     border-radius: 5px;
     margin: 10px 20px;
+    color: #cdcdcd !important;
+}
+
+.dark h1.loadtext,
+.dark h2.loadtext,
+.dark h3.loadtext {
+    background-color: #222222;
     color: #222222 !important;
 }
 
-.hero .loadtext {
+.dark p.loadtext,
+.dark a.loadtext,
+.dark li.loadtext {
+    background-color: #222222;
+    color: #222222 !important;
+}
+
+.hero .loadtext,
+#nav-list .loadtext {
     display: none;
 }
 
@@ -221,6 +236,10 @@ li.loadtext {
 
 .services-controls ul li {
     line-height: 30px;
+}
+
+.service-text {
+    cursor: pointer;
 }
 
 #team {

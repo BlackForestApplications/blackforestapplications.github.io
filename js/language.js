@@ -22,7 +22,6 @@ jQuery(document).ready(function ($) {
         }
     }
 
-    console.log(lang);
     changeLanguage();
 
 });
@@ -51,20 +50,20 @@ function changeLanguage() {
                     // replace text of the element
                     this.innerHTML = translation;
                 }
-
-                // debugging (remove this for production)
-                //console.log(id, translation);
         
             });
             
         });
 
         // set current language as selected
-        $("#language-select").value = lang;
+        $("#language-select")[0].value = lang;
 
     }
 
-    uncensor();
+    // reveal text content
+    setTimeout(function() {
+        uncensor();
+    }, 50);
 }
 
 function setLanguage(langCode) {
