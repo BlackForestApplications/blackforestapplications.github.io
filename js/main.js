@@ -33,7 +33,6 @@ jQuery(document).ready(function ($) {
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
-                    event.preventDefault();
                     $('html,body').animate({
                         // 80px offset due to the navbar
                         scrollTop: target.offset().top - 80
@@ -79,3 +78,10 @@ $(document).swipe({
                 closeSideMenu();
         }
 });
+
+/*
+    Rainbow hover effect
+*/
+function toggleRainbowEffect() {
+    document.body.classList.toggle("rnbw");
+}

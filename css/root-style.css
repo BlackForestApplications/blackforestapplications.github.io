@@ -52,6 +52,46 @@ main {
     color: rgba(120,120,120,.75);
 }
 
+/* rainbow hover effect */
+.rnbw .rainbow {
+    position: relative;
+    cursor: pointer;
+}
+.rnbw .rainbow:hover {
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    z-index: 0;
+    animation: rainbow-scroll 8s linear infinite;
+}
+.rnbw .rainbow.alpha:hover {
+    background: linear-gradient(90deg, rgba(3, 169, 244, 0.5), rgba(244, 65, 165, 0.5), rgba(255, 235, 59, 0.5), rgba(3, 169, 244, 0.5));
+    background-size: 400%;
+}
+.rnbw .rainbow::before {
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.rnbw .rainbow:hover::before {
+    opacity: 1;
+    z-index: -1;
+}
+@keyframes rainbow-scroll {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+
 .content {
     padding: 0;
     margin: 0 auto;
@@ -357,6 +397,7 @@ li.loadtext {
 
 .flex-right-float,
 footer .dark-mode-container,
+footer .rainbow-container,
 footer .dropdown-container {
     float: right;
     margin: 0;
@@ -366,8 +407,16 @@ footer .dropdown-container {
 }
 
 footer .dark-mode-container,
+footer .rainbow-container,
 footer .dropdown-container {
     margin-left: 10px;
+}
+
+.rainbow-container button {
+    opacity: 0;
+}
+.rainbow-container button:hover {
+    opacity: 1;
 }
 
 #language-select {

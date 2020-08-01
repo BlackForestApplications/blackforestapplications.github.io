@@ -28,11 +28,11 @@
        </button>
        <label class="brand">BlackForestApplications</label>
        <ul id="nav-list" class="acrylic">
-           <li><a data-lang="nav1" href="#home">Home</a></li>
-           <li><a data-lang="nav2" href="#services">Leistungen</a></li>
-           <li><a data-lang="nav3" href="#team">Team</a></li>
-           <li><a data-lang="nav4" href="#projects">Projekte</a></li>
-           <li><a data-lang="nav5" href="#contact">Kontakt</a></li>
+           <li class="alpha rainbow"><a data-lang="nav1" href="#home">Home</a></li>
+           <li class="alpha rainbow"><a data-lang="nav2" href="#services">Leistungen</a></li>
+           <li class="alpha rainbow"><a data-lang="nav3" href="#team">Team</a></li>
+           <li class="alpha rainbow"><a data-lang="nav4" href="#projects">Projekte</a></li>
+           <li class="alpha rainbow"><a data-lang="nav5" href="#contact">Kontakt</a></li>
        </ul>
    </nav>
    <section id="home" class="">
@@ -40,7 +40,7 @@
             <div class="hero-container">
                 <h2 data-lang="hero1">Ihr Problem ist unsere Lösung!</h2>
                 <a href="#services">
-                    <button data-lang="hero2" type="button" class="hero-button">Unsere Leistungen</button>
+                    <button data-lang="hero2" type="button" class="hero-button rainbow">Unsere Leistungen</button>
                 </a>
             </div>
         </div>    
@@ -109,10 +109,10 @@
                         <h1 class="loadtext" data-lang="hd8">Kontaktieren Sie uns</h1>
                     </div>
                     <div class="contact-actions">
-                        <div class="contact-items shadow-box">
+                        <div class="contact-items shadow-box rainbow">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="contact-items shadow-box">
+                        <div class="contact-items shadow-box rainbow">
                             <i class="fas fa-address-card"></i>
                         </div>
                     </div>
@@ -140,7 +140,7 @@
                 </div>
                 <div class="dropdown-container">
                     <span class="select-span">
-                        <select name="translations" id="language-select" onchange="setLanguage(this.value);">
+                        <select class="rainbow" name="translations" id="language-select" onchange="setLanguage(this.value);">
                             <option value="de">Deutsch</option>
                             <option value="en">English</option>
                             <option value="es">Español</option>                            
@@ -148,6 +148,11 @@
                             <option value="ru">Russian</option>
                         </select>
                     </span>
+                </div>
+                <div class="rainbow-container">
+                    <button onclick="toggleRainbowEffect();" class="icon-btn" title="Supa dupa Rainbow effect">
+                        <i class="fas fa-rainbow fa-lg"></i>
+                    </button>
                 </div>
             </div>
         </div>
