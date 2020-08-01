@@ -393,6 +393,15 @@ li.loadtext {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+@media (max-width: 420px) {
+    .footer-content label {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
 }
 
 .flex-right-float,
