@@ -137,7 +137,7 @@ section h1 {
  * Hero style
  *===============*/
 .hero {
-    background: url(/img/Tag.jpg);
+    background: url(../img/Tag.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -148,7 +148,7 @@ section h1 {
 }
 
 .dark .hero {
-    background: url(/img/Nacht.jpg);
+    background: url(../img/Nacht.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
