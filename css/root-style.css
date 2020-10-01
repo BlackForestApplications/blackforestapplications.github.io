@@ -292,6 +292,10 @@ li.loadtext {
     cursor: pointer;
 }
 
+.project-text {
+    text-align: center;
+}
+
 #team {
     margin-top: 18px;
 }
