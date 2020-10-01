@@ -312,6 +312,7 @@ li.loadtext {
     justify-content: center;
     margin: 20px auto;
     margin-bottom: 40px;
+    cursor: default !important;
 }
 
 .team-member {
