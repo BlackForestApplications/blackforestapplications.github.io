@@ -296,6 +296,52 @@ li.loadtext {
     margin-top: 18px;
 }
 
+.team-heading {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.team-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 20px auto;
+    margin-bottom: 40px;
+}
+
+.team-member {
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.team-member .profile-picture {
+    margin: 0 auto;
+}
+
+.team-member img {
+    display: inline-block;
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-member .profile-text {
+    padding-top: 10px;
+}
+
+.team-member .profile-text {
+    width: 100%;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.team-member .profile-text .rank {
+    font-weight: 700;
+}
+
 #projects {
     margin-top: 18px;
 }
