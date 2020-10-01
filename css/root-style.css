@@ -312,12 +312,13 @@ li.loadtext {
     justify-content: center;
     margin: 20px auto;
     margin-bottom: 40px;
-    cursor: default !important;
 }
 
 .team-member {
     padding: 20px;
     margin: 0 10px;
+    cursor: default !important;
+    border-radius: 5px;
 }
 
 .team-member .profile-picture {
