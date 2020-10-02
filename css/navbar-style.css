@@ -149,10 +149,14 @@
     transition: .3s ease-in-out; 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1060px) {
     #nav .brand {
         font-size: 28px;
         padding-left: 10px;
+    }
+
+    .logo {
+        display: none;
     }
 
     #nav ul li {
