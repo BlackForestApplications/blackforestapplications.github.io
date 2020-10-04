@@ -302,7 +302,7 @@ li.loadtext {
 .project-box {
     width: 300px;
     padding: 30px;
-    margin: 0 10px;
+    margin: 10px 10px;
     border-radius: 5px;
 }
 
@@ -344,7 +344,7 @@ li.loadtext {
 
 .team-member {
     padding: 20px;
-    margin: 0 10px;
+    margin: 10px 10px;
     cursor: default !important;
     border-radius: 5px;
 }
