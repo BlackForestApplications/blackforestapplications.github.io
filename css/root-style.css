@@ -615,10 +615,11 @@ footer .dropdown-container {
 }
 
 .select-span::after {
-    content: '⯆';
+    content: '\25BC';
+    font-family: Arial;
     font-size: 12px;
     position: absolute;
-    top: -1px;
+    top: 2px;
     right: 6px;
     color: #777777;
     pointer-events: none;

@@ -79,7 +79,7 @@ function setLanguage(langCode) {
 function getUserLanguage() {
     let userLang = navigator.language || navigator.userLanguage;
     // if some region is specified, return only the lang code
-    if(userLang.includes('-')) {
+    if(userLang.indexOf('-') !== -1) {
         userLang = userLang.substring(0, 2);
     }
     return userLang;
