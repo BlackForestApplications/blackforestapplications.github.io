@@ -44,6 +44,12 @@ jQuery(document).ready(function ($) {
     
 });
 
+/* open url in new tab */
+function openUrl(url) {
+    var tab = window.open(url, "_blank");
+    tab.focus();
+}
+
 /*
     Mobile SideMenu functions
 */
