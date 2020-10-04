@@ -6,10 +6,15 @@ html {
 }
 
 body {
-    font-family: Roboto,Arial,Helvetica,sans-serif;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
+}
+
+/* use arial font for navigation bar and hero */
+#nav, #home {
+    font-family: Arial;
 }
 
 .dark {
@@ -30,6 +35,15 @@ a {
 
 .dark a {
     color: #cdcdcd;
+}
+
+p a,
+.dark p a {
+    /* TODO: font color */
+}
+
+p a:hover {
+    color: tomato;
 }
 
 .shadow-box {
@@ -140,6 +154,14 @@ section h1 {
 
 .dark section h1 {
     color: #ffffff;
+}
+
+.description {
+    color: #5f6368;
+}
+
+.dark .description {
+    color: #9aa0a6;
 }
 
 /*===============
@@ -301,16 +323,17 @@ li.loadtext {
 
 .project-box {
     width: 300px;
-    padding: 30px;
+    padding: 20px;
     margin: 10px 10px;
     border-radius: 5px;
 }
 
 .project-name {
-    text-decoration: underline;
-    text-align: center;
+    text-decoration: none;
+    text-align: left;
     padding-bottom: 20px;
-    font-size: larger;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .project-picture {
@@ -319,7 +342,7 @@ li.loadtext {
 }
 
 .project-discription {
-    text-align: center;
+    text-align: left;
     padding-top: 10px;
     width: 100%;
 }
