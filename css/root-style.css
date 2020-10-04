@@ -65,7 +65,6 @@ a {
 /* rainbow hover effect */
 .rnbw .rainbow {
     position: relative;
-    cursor: pointer;
 }
 .rnbw .rainbow:hover {
     background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
@@ -292,8 +291,37 @@ li.loadtext {
     cursor: pointer;
 }
 
-.project-text {
+.projects-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 20px auto;
+    margin-bottom: 40px;
+}
+
+.project-box {
+    width: 300px;
+    padding: 30px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.project-name {
+    text-decoration: underline;
     text-align: center;
+    padding-bottom: 20px;
+    font-size: larger;
+}
+
+.project-picture {
+    width: 100%;
+    height: auto;
+}
+
+.project-discription {
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
 }
 
 #team {
