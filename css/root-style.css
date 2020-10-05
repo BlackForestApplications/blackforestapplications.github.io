@@ -65,10 +65,10 @@ a {
     color: #cdcdcd;
 }
 
-p a,
+/* p a,
 .dark p a {
-    /* TODO: font color */
-}
+    TODO: font color
+} */
 
 p a:hover {
     color: tomato;
