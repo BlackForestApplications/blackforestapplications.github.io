@@ -27,6 +27,9 @@
     <script defer src="./js/services-slider.js"></script>
 </head>
 <body>
+
+    <!--menü-->
+
    <nav id="nav" >
        <button id="nav-toggle" data-toggle="collapse">
            <span><i class="fas fa-bars"></i></span>
@@ -43,6 +46,9 @@
            <a href="#contact"><li data-lang="nav5" class="alpha rainbow">Kontakt</li></a>
        </ul>
    </nav>
+
+   <!--home-->
+
    <section id="home" class="">
         <div class="hero">
             <div class="hero-container">
@@ -53,8 +59,14 @@
             </div>
         </div>    
     </section>
+
+    <!--content-->
+
    <main>
        <div class="content">
+
+            <!--content:services-->
+
             <section id="services">
                 <h1 data-lang="hd1" >Leistungen</h1>
                 <div class="services-content">
@@ -102,19 +114,25 @@
                 </div>
             </section>
             <hr>
+
+            <!--content:projects-->
+
             <section id="projects">
                 <h1 data-lang="hd7">Projekte</h1>
                 <div class="projects-container">
+                    <!--project: BFA-Website-->
                     <div class="project-box shadow-box rainbow">
                         <p class="project-name">BFA-Webseite</p>
                         <img src="./img/project1.png" class="project-picture">
                         <p class="project-discription description">Unser erstes Projekt ist unsere BlackForestApplications Webseite. Wir habe sie mit viel Liebe Stück für Stück erstellt.</p>
                     </div>
+                    <!--project: BFA-Website-->
                     <div class="project-box shadow-box rainbow">
                         <p class="project-name">BFA-Webseite</p>
                         <img src="./img/project2.png" class="project-picture">
                         <p class="project-discription description">Unser erstes Projekt ist unsere BlackForestApplications Webseite. Wir habe sie mit viel Liebe Stück für Stück erstellt.</p>
                     </div>
+                    <!--project: RemoteLight-->
                     <div class="project-box action shadow-box rainbow">
                         <div>
                             <p class="project-name">RemoteLight</p>
@@ -125,6 +143,7 @@
                             <button data-lang="act1" onclick="openUrl('https://github.com/Drumber/RemoteLight')" class="card-button" type="button">Erfahre mehr</button>
                         </div>
                     </div>
+                    <!--project: RemoteLight Plugin for OpenRGB-->
                     <div class="project-box action shadow-box rainbow">
                         <div>
                             <p class="project-name">RemoteLight Plugin für OpenRGB</p>
@@ -138,10 +157,17 @@
                 </div>
             </section>
             <hr>
+
+            <!--content:team-->
+
             <section id="team">
                 <h1 data-lang="hd6">Team</h1>
                 <p class="team-heading" data-lang="tx5">Ein Team für Alles!</p>
+
+                <!--team:profiles-->
+
                 <div class="team-container">
+                    <!--profile:marius-->
                     <div class="team-member shadow-box rainbow">
                         <div class="profile-picture">
                             <img src="./img/MariusPB.jpg">
@@ -151,6 +177,7 @@
                             <p>Marius</p>
                         </div>
                     </div>
+                    <!--profile:lars-->
                     <div class="team-member shadow-box rainbow">
                         <div class="profile-picture">
                             <img src="./img/LarsPB.gif">
@@ -160,6 +187,7 @@
                             <p>Lars</p>
                         </div>
                     </div>
+                    <!--profile:manuel-->
                     <div class="team-member shadow-box rainbow">
                         <div class="profile-picture">
                             <img src="./img/ManuPB.png">
@@ -169,6 +197,7 @@
                             <p>Manuel</p>
                         </div>
                     </div>
+                    <!--profile:vinyks-->
                     <div class="team-member shadow-box rainbow">
                         <div class="profile-picture">
                             <img src="./img/VinyksPB.png">
@@ -178,6 +207,7 @@
                             <p>Vinyks</p>
                         </div>
                     </div>
+                    <!--profile:tomatex-->
                     <div class="team-member shadow-box rainbow">
                         <div class="profile-picture">
                             <img src="./img/TomatePB.jpg">
@@ -189,17 +219,23 @@
                     </div>
                 </div>
             </section>
+
+            <!--contact-->
             <section id="contact">
                 <div class="contact-box">
                     <div class="heading">
                         <h1 class="loadtext" data-lang="hd8">Kontaktieren Sie uns</h1>
                     </div>
                     <div class="contact-actions">
+
+                        <!--contact:mail-->
                         <a class="contact-items shadow-box rainbow" href="mailto:blackforestapplications+contact@gmail.com">
                             <div>
                                 <i class="fas fa-envelope"></i>
                             </div>
                         </a>
+
+                        <!--contact:discord-->
                         <a class="contact-items shadow-box rainbow" href="https://discord.gg/TKvaXU4" target="_blank">
                             <div>
                                 <i class="fab fa-discord"></i>
@@ -212,6 +248,7 @@
        </div>
    </main>
    <footer>
+       <!--youtube and instagram-->
         <div class="footer-social">
             <p data-lang="tx7">Folge uns auf</p>
             <a href="https://www.youtube.com/channel/UCIcuezaBO_w3LrCL3hi_s9Q" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -219,12 +256,16 @@
         </div>
         <div class="footer-content">
             <label>&copy; BlackForestApplications</label>
+
+            <!--darkmode selection-->
             <div class="flex-right-float">
                 <div class="dark-mode-container">
                     <button onclick="toggleDarkMode();" class="icon-btn" title="Toggle Dark Mode">
                         <i class="fas fa-adjust fa-lg"></i>
                     </button>
                 </div>
+
+                <!--language selection-->
                 <div class="dropdown-container">
                     <span class="select-span">
                         <select class="rainbow" name="translations" id="language-select" onchange="setLanguage(this.value);">
@@ -237,6 +278,8 @@
                         </select>
                     </span>
                 </div>
+
+                <!--rainbow selection-->
                 <div class="rainbow-container">
                     <button onclick="toggleRainbowEffect();" class="icon-btn" title="Supa dupa Rainbow effect">
                         <i class="fas fa-rainbow fa-lg"></i>
