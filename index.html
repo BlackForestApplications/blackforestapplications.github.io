@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="./css/root-style.css">
     <link rel="stylesheet" type="text/css" href="./css/navbar-style.css">
     <link rel="stylesheet" type="text/css" href="./css/services-slider.css">
+    <link rel="stylesheet" type="text/css" href="./css/projects-img-slider.css">
     <!--FontAwesome-->
     <script defer src="./js/all.js"></script>
     <!--Google Fonts-->
@@ -25,6 +26,7 @@
     <script defer src="./js/darkmode-switch.js"></script>
     <script defer src="./js/main.js"></script>
     <script defer src="./js/services-slider.js"></script>
+    <script defer src="./js/projects-img-slider.js"></script>
 </head>
 <body>
 
@@ -123,7 +125,17 @@
                     <!--project: BFA-Website-->
                     <div class="project-box shadow-box rainbow">
                         <p class="project-name">BFA-Webseite</p>
-                        <img src="./img/projects/BFA1.png" class="project-picture">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img src="./img/projects/BFA1.png" class="project-picture"> 
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="./img/projects/BFA2.png" class="project-picture"> 
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        
                         <p class="project-discription description">Unser erstes Projekt ist unsere BlackForestApplications Webseite. Wir habe sie mit viel Liebe Stück für Stück erstellt.</p>
                     </div>
                     <!--project: RemoteLight-->
