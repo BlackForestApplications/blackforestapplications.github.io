@@ -13,26 +13,26 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
     background-color: #ffffff;
 }
 body::-webkit-scrollbar-track {
     background-color: #ffffff;
 }
 body::-webkit-scrollbar-thumb {
-    border-radius: 10px;
+    border-radius: 5px;
     background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0.00, tomato),color-stop(0.50, rgb(255, 172, 158)),color-stop(1.00, tomato));
 }
 
 .dark::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
     background-color: #121212;
 }
 .dark::-webkit-scrollbar-track {
     background-color: #121212;
 }
 .dark::-webkit-scrollbar-thumb {
-    border-radius: 10px;
+    border-radius: 5px;
     background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0.00, rgb(28,58,148)),color-stop(0.50, rgb(73,125,189)),color-stop(1.00, rgb(28,58,148)));
 }
 
