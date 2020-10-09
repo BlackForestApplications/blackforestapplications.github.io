@@ -71,7 +71,7 @@ a {
 } */
 
 p a:hover {
-    color: tomato;
+    color: green;
 }
 
 .shadow-box {
