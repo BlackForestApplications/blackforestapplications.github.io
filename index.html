@@ -8,7 +8,7 @@
     <link type="image/png" href="favicon.ico" rel="icon" />
     <link type="image/png" href="favicon.ico" rel="shortcut icon" />
     <title>BlackForestApplications</title>
-    
+
     <!--Stylesheets-->
     <link rel="stylesheet" type="text/css" href="./css/root-style.css">
     <link rel="stylesheet" type="text/css" href="./css/navbar-style.css">
@@ -17,7 +17,7 @@
     <!--FontAwesome-->
     <script defer src="./js/all.js"></script>
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <!--jQuery-->
     <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!--TouchSwipe-->
@@ -33,26 +33,28 @@
 
     <!--nav-menu-->
 
-   <nav id="nav" >
-       <button id="nav-toggle" data-toggle="collapse">
-           <span><i class="fas fa-bars"></i></span>
-       </button>
+    <nav id="nav">
+        <button id="nav-toggle" data-toggle="collapse">
+            <span><i class="fas fa-bars"></i></span>
+        </button>
         <span>
             <img class="logo" src="./img/BFA_Logo.png">
-            <label class="brand">BlackForestApplications</label>
-       </span>
-       <ul id="nav-list" class="acrylic">
-           <a href="#home"><li data-lang="nav1" class="alpha rainbow">Home</li></a>
-           <a href="#services"><li data-lang="nav2" class="alpha rainbow">Leistungen</li></a>
-           <a href="#projects"><li data-lang="nav4" class="alpha rainbow">Projekte</li></a>
-           <a href="#team"><li data-lang="nav3" class="alpha rainbow">Team</li></a>
-           <a href="#contact"><li data-lang="nav5" class="alpha rainbow">Kontakt</li></a>
-       </ul>
-   </nav>
+            <label class="brand">BlackForestHolding</label>
+        </span>
+        <ul id="nav-list" class="acrylic">
+            <a href="#home"><li data-lang="nav1" class="alpha rainbow">Home</li></a>
+            <a href="#services"><li data-lang="nav2" class="alpha rainbow">Leistungen</li></a>
+            <a href="games/games.html"><li data-lang="nav2" class="alpha rainbow">Games</li></a>
+            <a href="applications/applications.html"><li data-lang="nav2" class="alpha rainbow">Applications</li></a>
+            <a href="#projects"><li data-lang="nav4" class="alpha rainbow">Projekte</li></a>
+            <a href="#team"><li data-lang="nav3" class="alpha rainbow">Team</li></a>
+            <a href="#contact"><li data-lang="nav5" class="alpha rainbow">Kontakt</li></a>
+        </ul>
+    </nav>
 
-   <!--home-->
+    <!--home-->
 
-   <section id="home" class="">
+    <section id="home" class="">
         <div class="hero">
             <div class="hero-container">
                 <h2 data-lang="hero1">Ihr Problem ist unsere Lösung!</h2>
@@ -60,18 +62,18 @@
                     <button data-lang="hero2" type="button" class="hero-button rainbow">Unsere Leistungen</button>
                 </a>
             </div>
-        </div>    
+        </div>
     </section>
 
     <!--content-->
 
-   <main>
-       <div class="content">
+    <main>
+        <div class="content">
 
             <!--content:services-->
 
             <section id="services">
-                <h1 data-lang="hd1" >Leistungen</h1>
+                <h1 data-lang="hd1">Leistungen</h1>
                 <div class="services-content">
 
                     <div class="services-slider-wrapper">
@@ -79,26 +81,26 @@
                             <div class="service-item initial">
                                 <h1 data-lang="hd2">Apps</h1>
                                 <div class="service-content">
-                                    <p data-lang="tx1">Wir entwickeln moderne, benutzerfreundliche Android Apps. Unsere Apps folgen dem Material Design und besitzen einen Dark Mode.</p>
+                                    <p data-lang="tx1" class="service-description">Wir entwickeln moderne, benutzerfreundliche Android Apps. Unsere Apps folgen dem Material Design und besitzen einen Dark Mode.</p>
                                 </div>
                             </div>
                             <div class="service-item">
                                 <h1 data-lang="hd3">Desktop</h1>
                                 <div class="service-content">
-                                    <p data-lang="tx2">Plattformunabhängige Desktop Anwendungen entwickeln wir auch.</p>
+                                    <p data-lang="tx2" class="service-description">Plattformunabhängige Desktop Anwendungen entwickeln wir auch.</p>
                                 </div>
                             </div>
                             <div class="service-item">
                                 <h1 data-lang="hd4">Webseiten</h1>
                                 <div class="service-content">
-                                    <p data-lang="tx3">Natürlich können wir auch Webseite, wie diese hier, erstellen.</p>
+                                    <p data-lang="tx3" class="service-description">Natürlich können wir auch Webseiten, wie diese hier, erstellen.</p>
                                 </div>
                             </div>
                             <div class="service-item">
-                                <h1 data-lang="hd5">Musik</h1>
-                                <div class="service-content">
-                                    <p data-lang="tx4">Und damit Ihre Party nicht langweilig wird, produzieren wir sicke Beats!</p>
-                                </div>
+                                    <h1 data-lang="hd5">Games</h1>
+                                    <div class="service-content">
+                                        <p data-lang="tx4" class="service-description">Unser kleines Spieleentwicklungs Team bieten Atemberaubende Games.</p>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -109,11 +111,11 @@
                             <li onclick="moveToIndex(0);" class="service-text" data-lang="hd2">Apps</li>
                             <li onclick="moveToIndex(1);" class="service-text" data-lang="hd3">Desktop </li>
                             <li onclick="moveToIndex(2);" class="service-text" data-lang="hd4">Webseiten</li>
-                            <li onclick="moveToIndex(3);" class="service-text" data-lang="hd5">Musik</li>
+                            <li onclick="moveToIndex(3);" class="service-text" data-lang="hd5">Games</li>
                         </ul>
                         <a class="services-slider-next"><i class="fas fa-chevron-circle-down"></i></a>
                     </div>
-            
+
                 </div>
             </section>
             <hr>
@@ -128,38 +130,16 @@
                         <p class="project-name">BFA-Webseite</p>
                         <div class="slideshow-container">
                             <div class="mySlides fade">
-                                <img src="./img/projects/BFA1.png" class="project-picture"> 
+                                <img src="./img/projects/BFA1.png" class="project-picture">
                             </div>
                             <div class="mySlides fade">
-                                <img src="./img/projects/BFA2.png" class="project-picture"> 
+                                <img src="./img/projects/BFA2.png" class="project-picture">
                             </div>
                             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                             <a class="next" onclick="plusSlides(1)">&#10095;</a>
                         </div>
-                        
+
                         <p class="project-discription description">Unser erstes Projekt ist unsere BlackForestApplications Webseite. Wir habe sie mit viel Liebe Stück für Stück erstellt.</p>
-                    </div>
-                    <!--project: RemoteLight-->
-                    <div class="project-box action shadow-box rainbow">
-                        <div>
-                            <p class="project-name">RemoteLight</p>
-                            <img src="./img/projects/RemoteLightProject.png" class="project-picture">
-                            <p class="project-discription description">RemoteLight ist eine plattformübergreifende Steuersoftware für induviduell addressierbare LEDs. Es bietet zahlreiche Funktionen, wie Animationen, Musik Visualizer, Bildschirm-Synchronisation und mehr. Zudem lässt sich das Programm beliebig personalisieren und erweitern.</p>
-                        </div>
-                        <div class="project-action">
-                            <button data-lang="act1" onclick="openUrl('https://github.com/Drumber/RemoteLight')" class="card-button" type="button">Erfahre mehr</button>
-                        </div>
-                    </div>
-                    <!--project: RemoteLight Plugin for OpenRGB-->
-                    <div class="project-box action shadow-box rainbow">
-                        <div>
-                            <p class="project-name">RemoteLight Plugin für OpenRGB</p>
-                            <img src="./img/projects/RemoteLightProject.png" class="project-picture">
-                            <p class="project-discription description">Plugin für RemoteLight, das <a href="https://gitlab.com/CalcProgrammer1/OpenRGB">OpenRGB</a> Unterstützung hinzufügt. OpenRGB ermöglicht das ansteuern zahlreicher RGB-Komponenten, wie Tastataturen, Lüfter und mehr. Durch das Plugin erhältst du die volle RemoteLight Funktionalität für dein gesamtes RGB-Setup!</p>
-                        </div>
-                        <div class="project-action">
-                            <button data-lang="act1" onclick="openUrl('https://github.com/RemoteLight/OpenRGB-Plugin')" class="card-button" type="button">Erfahre mehr</button>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -224,11 +204,10 @@
                             <p>Tomatex</p>
                         </div>
                     </div>
-                </div>
-            </section>
+</section>
 
             <!--contact-->
-            
+
             <section id="contact">
                 <div class="contact-box">
                     <div class="heading">
@@ -249,21 +228,21 @@
                                 <i class="fab fa-discord"></i>
                             </div>
                         </a>
-                        
+
                     </div>
                 </div>
             </section>
-       </div>
-   </main>
-   <footer>
-       <!--youtube and instagram-->
+        </div>
+    </main>
+    <footer>
+        <!--youtube and instagram-->
         <div class="footer-social">
             <p data-lang="tx7">Folge uns auf</p>
             <a href="https://www.youtube.com/channel/UCIcuezaBO_w3LrCL3hi_s9Q" target="_blank"><i class="fab fa-youtube"></i></a>
             <a href="https://www.instagram.com/blackforestapplications" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
         <div class="footer-content">
-            <label>&copy; BlackForestApplications</label>
+            <label>&copy; BlackForestHolding</label>
 
             <!--darkmode selection-->
             <div class="flex-right-float">
@@ -280,7 +259,7 @@
                             <option value="de">Deutsch</option>
                             <option value="en">English</option>
                             <option value="fr">French</option>
-                            <option value="es">Español</option>                            
+                            <option value="es">Español</option>
                             <option value="ja">Japanese</option>
                             <option value="ru">Russian</option>
                         </select>
@@ -295,7 +274,7 @@
                 </div>
             </div>
         </div>
-   </footer>
-   <script src="./js/text-loading.js"></script>
+    </footer>
+    <script src="./js/text-loading.js"></script>
 </body>
 </html>

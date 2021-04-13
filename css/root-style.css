@@ -12,28 +12,33 @@ body {
     background-color: #ffffff;
 }
 
+/* Scrollbar*/
 body::-webkit-scrollbar {
     width: 10px;
     background-color: #ffffff;
 }
+
 body::-webkit-scrollbar-track {
     background-color: #ffffff;
 }
+
 body::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0.00, tomato),color-stop(0.50, rgb(255, 172, 158)),color-stop(1.00, tomato));
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.00, #FF9900),color-stop(0.50, #FFCC00),color-stop(1.00, #FF9900));
 }
 
 .dark::-webkit-scrollbar {
     width: 10px;
     background-color: #121212;
 }
+
 .dark::-webkit-scrollbar-track {
     background-color: #121212;
 }
+
 .dark::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0.00, rgb(28,58,148)),color-stop(0.50, rgb(73,125,189)),color-stop(1.00, rgb(28,58,148)));
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.00, #FF9900),color-stop(0.50, #FFCC00),color-stop(1.00, #FF9900));
 }
 
 
@@ -348,8 +353,6 @@ li.loadtext {
 
 .services-content {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
     align-items: stretch;
     max-width: 1000px;
     margin: 0 auto;
@@ -378,6 +381,13 @@ li.loadtext {
     cursor: pointer;
 }
 
+.service-description {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+/* Projects */
 .projects-container {
     display: flex;
     flex-flow: row wrap;
