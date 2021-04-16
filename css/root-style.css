@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
+    background-image: linear-gradient(90deg, rgb(212,192, 138, 0.2) 0%, rgb(171, 143, 51, 0.2) 50%);
 }
 
 /* Scrollbar*/
@@ -48,6 +49,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .dark {
+    background-image: none;
     background-color: #121212;
     color: #cdcdcd;
 }
@@ -84,6 +86,7 @@ p a:hover {
     -moz-box-shadow: 0px 6px 20px -4px rgba(0,0,0,0.6);
     box-shadow: 0px 6px 20px -4px rgba(0,0,0,0.6);
     transition: box-shadow 0.33s ease;
+    background-color: white;
 }
 
 .dark .shadow-box {
@@ -163,8 +166,7 @@ section {
 }
 
 hr {
-    border: none;
-    border-top: 1px solid #dadce0;
+    border-top: 1px solid grey;
     max-width: 90%;
     margin: 0 auto;
     padding: 0;
@@ -358,79 +360,16 @@ li.loadtext {
     margin: 0 auto;
 }
 
-.services-slider-wrapper {
-    flex-grow: 2;
+.service-box {
+    margin: 20px;
+    width: 500px;
+    border-radius:20px;
 }
 
-.services-controls {
-    flex-grow: 1;
-    text-align: center;
+.service-title {
 }
 
-.services-controls ul {
-    text-decoration: none;
-    list-style: none;
-    padding: 0;
-}
-
-.services-controls ul li {
-    line-height: 30px;
-}
-
-.service-text {
-    cursor: pointer;
-}
-
-.service-description {
-    border-radius: 10px;
-    padding: 20px;
-}
-
-
-/* Projects */
-.projects-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 20px auto;
-    margin-bottom: 40px;
-}
-
-.project-box {
-    width: 300px;
-    padding: 20px;
-    margin: 10px 10px;
-    border-radius: 5px;
-}
-
-.project-box.action {
-    display: grid;
-    grid-template-rows: auto 40px;
-}
-
-.project-name {
-    text-decoration: none;
-    text-align: left;
-    padding-bottom: 20px;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.project-picture {
-    width: 100%;
-    height: auto;
-}
-
-.project-discription {
-    text-align: left;
-    padding-top: 10px;
-    width: 100%;
-}
-
-.project-action {
-    display: flex;
-    padding-top: 10px;
-}
+/* Team */
 
 #team {
     margin-top: 18px;

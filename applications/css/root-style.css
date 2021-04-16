@@ -1,5 +1,5 @@
 /*===============
- * Root style Games
+ * Root style
  *===============*/
 html {
     scroll-behavior: smooth;
@@ -10,29 +10,33 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
+    background-image: linear-gradient(90deg, rgb(156, 185, 193, 0.2) 0%, rgb(59, 114, 135, 0.2) 50%);
 }
 
+    /* Scrollbar*/
+    body::-webkit-scrollbar {
+        width: 10px;
+        background-color: #ffffff;
+    }
 
-/* Scrollbar*/
-body::-webkit-scrollbar {
-    width: 10px;
-    background-color: #ffffff;
-}
-body::-webkit-scrollbar-track {
-    background-color: #ffffff;
-}
-body::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.00, #FF9900),color-stop(0.50, #FFCC00),color-stop(1.00, #FF9900));
-}
+    body::-webkit-scrollbar-track {
+        background-color: #ffffff;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.00, #FF9900),color-stop(0.50, #FFCC00),color-stop(1.00, #FF9900));
+    }
 
 .dark::-webkit-scrollbar {
     width: 10px;
     background-color: #121212;
 }
+
 .dark::-webkit-scrollbar-track {
     background-color: #121212;
 }
+
 .dark::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.00, #FF9900),color-stop(0.50, #FFCC00),color-stop(1.00, #FF9900));
@@ -45,6 +49,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .dark {
+    background-image: none;
     background-color: #121212;
     color: #cdcdcd;
 }
@@ -81,6 +86,7 @@ p a:hover {
     -moz-box-shadow: 0px 6px 20px -4px rgba(0,0,0,0.6);
     box-shadow: 0px 6px 20px -4px rgba(0,0,0,0.6);
     transition: box-shadow 0.33s ease;
+    background-color: white;
 }
 
 .dark .shadow-box {
@@ -100,50 +106,59 @@ p a:hover {
     color: rgba(120,120,120,1);
     cursor: pointer;
 }
-.icon-btn:focus {
-    outline: 0;
-}
-.icon-btn:active {
-    scale: 0.95;
-}
-.icon-btn:hover {
-    color: rgba(120,120,120,.75);
-}
+
+    .icon-btn:focus {
+        outline: 0;
+    }
+
+    .icon-btn:active {
+        scale: 0.95;
+    }
+
+    .icon-btn:hover {
+        color: rgba(120,120,120,.75);
+    }
 
 /* rainbow hover effect */
 .rnbw .rainbow {
     position: relative;
 }
-.rnbw .rainbow:hover {
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-    background-size: 400%;
-    z-index: 0;
-    animation: rainbow-scroll 8s linear infinite;
-}
-.rnbw .rainbow.alpha:hover {
-    background: linear-gradient(90deg, rgba(3, 169, 244, 0.5), rgba(244, 65, 165, 0.5), rgba(255, 235, 59, 0.5), rgba(3, 169, 244, 0.5));
-    background-size: 400%;
-}
-.rnbw .rainbow::before {
-    content: '';
-    position: absolute;
-    background: inherit;
-    top: -5px;
-    right: -5px;
-    bottom: -5px;
-    left: -5px;
-    filter: blur(20px);
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-.rnbw .rainbow:hover::before {
-    opacity: 1;
-    z-index: -1;
-}
+
+    .rnbw .rainbow:hover {
+        background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+        background-size: 400%;
+        z-index: 0;
+        animation: rainbow-scroll 8s linear infinite;
+    }
+
+    .rnbw .rainbow.alpha:hover {
+        background: linear-gradient(90deg, rgba(3, 169, 244, 0.5), rgba(244, 65, 165, 0.5), rgba(255, 235, 59, 0.5), rgba(3, 169, 244, 0.5));
+        background-size: 400%;
+    }
+
+    .rnbw .rainbow::before {
+        content: '';
+        position: absolute;
+        background: inherit;
+        top: -5px;
+        right: -5px;
+        bottom: -5px;
+        left: -5px;
+        filter: blur(20px);
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    .rnbw .rainbow:hover::before {
+        opacity: 1;
+        z-index: -1;
+    }
+
 @keyframes rainbow-scroll {
     0% {
         background-position: 0%;
     }
+
     100% {
         background-position: 400%;
     }
@@ -160,8 +175,7 @@ section {
 }
 
 hr {
-    border: none;
-    border-top: 1px solid #dadce0;
+    border-top: 1px solid grey;
     max-width: 90%;
     margin: 0 auto;
     padding: 0;
@@ -219,9 +233,9 @@ section h1 {
     background-color: transparent;
 }
 
-.card-button:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-}
+    .card-button:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
 
 .dark .card-button:hover {
     background-color: rgba(255, 255, 255, 0.05);
@@ -235,7 +249,7 @@ section h1 {
  * Hero style
  *===============*/
 .hero {
-    background: url(../img/background/Tag.jpg);
+    background: url(../img/background/applications.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -246,7 +260,7 @@ section h1 {
 }
 
 .dark .hero {
-    background: url(../img/background/Nacht.jpg);
+    background: url(../img/background/applications.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -269,7 +283,7 @@ section h1 {
 
 .hero h2 {
     margin: 30px 0 10px 0;
-    font-size: 130px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 56px;
     color: #ffffff;
@@ -277,12 +291,12 @@ section h1 {
 
 .hero button {
     background-color: transparent;
-	border-radius: 45px;
-	border: 2px solid #dcdcdc;
-	display:inline-block;
-	cursor:pointer;
-	color: #ffffff;
-	font-size: 20px;
+    border-radius: 45px;
+    border: 2px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
     padding: 10px 40px;
     margin-top: 10px;
     text-decoration: none;
@@ -291,10 +305,11 @@ section h1 {
     transition: all 0.3s ease 0s;
 }
 
-.hero button:hover {
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-5px);
-}
+    .hero button:hover {
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-5px);
+    }
+
 
 /*===============
  * Section styles

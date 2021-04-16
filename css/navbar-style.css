@@ -46,6 +46,7 @@
     color: #dfdfdf !important;
     text-decoration: none;
     list-style: none;
+    padding: 0;
 }
 
 #nav-toggle {
@@ -95,7 +96,7 @@
     margin: 0;
 }
 
-@media (min-width: 851px) {
+@media (min-width: 949px) {
     #nav ul {
         -webkit-backdrop-filter: none;
         backdrop-filter: none;
@@ -149,9 +150,9 @@
     transition: .3s ease-in-out; 
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 948px) {
     #nav .brand {
-        font-size: 28px;
+        font-size: 32px;
         padding-left: 10px;
     }
 
@@ -169,7 +170,7 @@
 }
 
 /* small screen */
-@media (max-width: 950px) {
+@media (max-width: 948px) {
     #nav .brand {
         font-size: 22px;
         padding: 0;
