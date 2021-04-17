@@ -12,8 +12,8 @@
     <!--Stylesheets-->
     <link rel="stylesheet" type="text/css" href="./css/root-style.css">
     <link rel="stylesheet" type="text/css" href="./css/navbar-style.css">
-    <link rel="stylesheet" type="text/css" href="./css/services-slider.css">
     <link rel="stylesheet" type="text/css" href="./css/projects-img-slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <!--FontAwesome-->
     <script defer src="./js/all.js"></script>
     <!--Google Fonts-->
@@ -26,8 +26,8 @@
     <script defer src="./js/language.js"></script>
     <script defer src="./js/darkmode-switch.js"></script>
     <script defer src="./js/main.js"></script>
-    <script defer src="./js/services-slider.js"></script>
     <script defer src="./js/projects-img-slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 </head>
 <body>
 
@@ -44,8 +44,7 @@
         <ul id="nav-list" class="acrylic">
             <a href="#home"><li data-lang="nav1" class="alpha rainbow">Home</li></a>
             <a href="#services"><li data-lang="nav2" class="alpha rainbow">Leistungen</li></a>
-            <a href="#projects"><li data-lang="nav4" class="alpha rainbow">Projekte</li></a>
-            <a href="#team"><li data-lang="nav3" class="alpha rainbow">Team</li></a>
+            <a href="#team"><li data-lang="nav4" class="alpha rainbow">Team</li></a>
             <a href="#contact"><li data-lang="nav5" class="alpha rainbow">Kontakt</li></a>
         </ul>
     </nav>
@@ -72,17 +71,33 @@
 
             <section id="services">
                 <h1 data-lang="hd1">Zu unseren Leistungen</h1>
-                <div class="services-content">
-                    <a class="service-box shadow-box rainbow" href="./games/games.html">
-                        <h1 class="service-title ">Spiele</h1>
-                    </a>
-                    <a class="service-box shadow-box rainbow" href="./applications/applications.html">
-                        <h1 class="service-title ">Anwendungen</h1>
-                    </a>
-                    <a class="service-box shadow-box rainbow" href="./web/web.html">
-                        <h1 class="service-title ">Web</h1>
-                    </a>
-                </div>
+                <div class="splide services-content" data-splide='{"type":"loop"}' id="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list ">
+                            <li class="splide__slide">
+                                <div class="service-box shadow-box rainbow">
+                                    <a href="./games/games.html">
+                                        <h1 data-lang="hd2">Spiele</h1>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="service-box shadow-box rainbow">
+                                    <a href="./applications/applications.html">
+                                        <h1 class="service-box shadow-box rainbow" data-lang="hd3">Anwendungen</h1>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="service-box shadow-box rainbow">
+                                    <a href="./web/web.html">
+                                        <h1 class="service-box shadow-box rainbow" data-lang="hd4">Webseiten</h1>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
             </section>
             <hr>
 

@@ -13,20 +13,20 @@ body {
     background-image: linear-gradient(90deg, rgb(212,192, 138, 0.2) 0%, rgb(171, 143, 51, 0.2) 50%);
 }
 
-/* Scrollbar*/
-body::-webkit-scrollbar {
-    width: 10px;
-    background-color: #ffffff;
-}
+    /* Scrollbar*/
+    body::-webkit-scrollbar {
+        width: 10px;
+        background-color: #ffffff;
+    }
 
-body::-webkit-scrollbar-track {
-    background-color: #ffffff;
-}
+    body::-webkit-scrollbar-track {
+        background-color: #ffffff;
+    }
 
-body::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.00, #FF9900),color-stop(0.50, #FFCC00),color-stop(1.00, #FF9900));
-}
+    body::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.00, #FF9900),color-stop(0.50, #FFCC00),color-stop(1.00, #FF9900));
+    }
 
 .dark::-webkit-scrollbar {
     width: 10px;
@@ -72,11 +72,6 @@ a {
     color: #cdcdcd;
 }
 
-/* p a,
-.dark p a {
-    TODO: font color
-} */
-
 p a:hover {
     color: green;
 }
@@ -106,50 +101,59 @@ p a:hover {
     color: rgba(120,120,120,1);
     cursor: pointer;
 }
-.icon-btn:focus {
-    outline: 0;
-}
-.icon-btn:active {
-    scale: 0.95;
-}
-.icon-btn:hover {
-    color: rgba(120,120,120,.75);
-}
+
+    .icon-btn:focus {
+        outline: 0;
+    }
+
+    .icon-btn:active {
+        scale: 0.95;
+    }
+
+    .icon-btn:hover {
+        color: rgba(120,120,120,.75);
+    }
 
 /* rainbow hover effect */
 .rnbw .rainbow {
     position: relative;
 }
-.rnbw .rainbow:hover {
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-    background-size: 400%;
-    z-index: 0;
-    animation: rainbow-scroll 8s linear infinite;
-}
-.rnbw .rainbow.alpha:hover {
-    background: linear-gradient(90deg, rgba(3, 169, 244, 0.5), rgba(244, 65, 165, 0.5), rgba(255, 235, 59, 0.5), rgba(3, 169, 244, 0.5));
-    background-size: 400%;
-}
-.rnbw .rainbow::before {
-    content: '';
-    position: absolute;
-    background: inherit;
-    top: -5px;
-    right: -5px;
-    bottom: -5px;
-    left: -5px;
-    filter: blur(20px);
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-.rnbw .rainbow:hover::before {
-    opacity: 1;
-    z-index: -1;
-}
+
+    .rnbw .rainbow:hover {
+        background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+        background-size: 400%;
+        z-index: 0;
+        animation: rainbow-scroll 8s linear infinite;
+    }
+
+    .rnbw .rainbow.alpha:hover {
+        background: linear-gradient(90deg, rgba(3, 169, 244, 0.5), rgba(244, 65, 165, 0.5), rgba(255, 235, 59, 0.5), rgba(3, 169, 244, 0.5));
+        background-size: 400%;
+    }
+
+    .rnbw .rainbow::before {
+        content: '';
+        position: absolute;
+        background: inherit;
+        top: -5px;
+        right: -5px;
+        bottom: -5px;
+        left: -5px;
+        filter: blur(20px);
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    .rnbw .rainbow:hover::before {
+        opacity: 1;
+        z-index: -1;
+    }
+
 @keyframes rainbow-scroll {
     0% {
         background-position: 0%;
     }
+
     100% {
         background-position: 400%;
     }
@@ -224,9 +228,9 @@ section h1 {
     background-color: transparent;
 }
 
-.card-button:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-}
+    .card-button:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
 
 .dark .card-button:hover {
     background-color: rgba(255, 255, 255, 0.05);
@@ -282,12 +286,12 @@ section h1 {
 
 .hero button {
     background-color: transparent;
-	border-radius: 45px;
-	border: 2px solid #dcdcdc;
-	display:inline-block;
-	cursor:pointer;
-	color: #ffffff;
-	font-size: 20px;
+    border-radius: 45px;
+    border: 2px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
     padding: 10px 40px;
     margin-top: 10px;
     text-decoration: none;
@@ -296,10 +300,10 @@ section h1 {
     transition: all 0.3s ease 0s;
 }
 
-.hero button:hover {
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-5px);
-}
+    .hero button:hover {
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-5px);
+    }
 
 /*===============
  * Section styles
@@ -348,22 +352,24 @@ li.loadtext {
 }
 
 /* Services */
-#services {
-    margin-top: 18px;
-    height: 100%;
-}
 
 .services-content {
-    display: flex;
     align-items: stretch;
-    max-width: 1000px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
 .service-box {
-    margin: 20px;
-    width: 500px;
-    border-radius:20px;
+    margin: 40px auto;
+    width: 360px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.service-text {
+    margin: 10px;
+    cursor: pointer;
+    float: left;
 }
 
 /* Team */
@@ -393,32 +399,32 @@ li.loadtext {
     border-radius: 5px;
 }
 
-.team-member .profile-picture {
-    margin: 0 auto;
-}
+    .team-member .profile-picture {
+        margin: 0 auto;
+    }
 
-.team-member img {
-    display: inline-block;
-    margin: 0 auto;
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-}
+    .team-member img {
+        display: inline-block;
+        margin: 0 auto;
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
 
-.team-member .profile-text {
-    padding-top: 10px;
-}
+    .team-member .profile-text {
+        padding-top: 10px;
+    }
 
-.team-member .profile-text {
-    width: 100%;
-    text-align: center;
-    line-height: 1.5rem;
-}
+    .team-member .profile-text {
+        width: 100%;
+        text-align: center;
+        line-height: 1.5rem;
+    }
 
-.team-member .profile-text .rank {
-    font-weight: 700;
-}
+        .team-member .profile-text .rank {
+            font-weight: 700;
+        }
 
 #projects {
     margin-top: 18px;
@@ -426,7 +432,7 @@ li.loadtext {
 
 #contact {
     background: rgb(250,250,250);
-    background: linear-gradient(90deg, rgba(250,250,250,0) 0%, rgba(250,250,250,1) 10%, rgba(250,250,250,1) 90%, rgba(250,250,250,0) 100%); 
+    background: linear-gradient(90deg, rgba(250,250,250,0) 0%, rgba(250,250,250,1) 10%, rgba(250,250,250,1) 90%, rgba(250,250,250,0) 100%);
     border-top: 2px solid #dadce0;
     border-bottom: 2px solid #dadce0;
     border-image: linear-gradient(90deg, rgba(218,220,224,0) 10%, rgba(218,220,224,1) 40%, rgba(218,220,224,1) 60%, rgba(218,220,224,0) 90%);
@@ -436,7 +442,7 @@ li.loadtext {
 }
 
 .dark #contact {
-    background: #191919; 
+    background: #191919;
     border-top: 2px solid #777777;
     border-bottom: 2px solid #777777;
     border-image: linear-gradient(90deg, #191919 10%, #2f2f2f 40%, #2f2f2f 60%, #191919 90%);
@@ -454,14 +460,14 @@ li.loadtext {
     text-align: center;
 }
 
-.heading h1 {
-    font-size: 38px;
-    line-height: 1.25;
-    color: #202124;
-    font-weight: 400;
-    word-wrap: initial;
-    word-spacing: 0;
-}
+    .heading h1 {
+        font-size: 38px;
+        line-height: 1.25;
+        color: #202124;
+        font-weight: 400;
+        word-wrap: initial;
+        word-spacing: 0;
+    }
 
 .contact-actions {
     display: flex;
@@ -497,30 +503,30 @@ li.loadtext {
 /*===============
  * Footer
  *===============*/
- footer {
+footer {
     padding-top: 10px;
     width: 95%;
     margin: 0 auto;
     margin-bottom: 10px;
     color: #666666;
- }
-
- .footer-social {
-     margin-bottom: 10px;
- }
-
-.footer-social a {
-    font-size: 1.6rem;
-    cursor: pointer;
-    margin-right: 5px;
-    text-decoration: none;
-    color: #666666;
 }
 
-.footer-social p {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
+.footer-social {
+    margin-bottom: 10px;
 }
+
+    .footer-social a {
+        font-size: 1.6rem;
+        cursor: pointer;
+        margin-right: 5px;
+        text-decoration: none;
+        color: #666666;
+    }
+
+    .footer-social p {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
 
 .footer-content {
     color: #777777;
@@ -558,9 +564,10 @@ footer .dropdown-container {
 .rainbow-container button {
     opacity: 0;
 }
-.rainbow-container button:hover {
-    opacity: 1;
-}
+
+    .rainbow-container button:hover {
+        opacity: 1;
+    }
 
 #language-select {
     width: 100px;
@@ -578,20 +585,19 @@ footer .dropdown-container {
 
 .dark #language-select {
     background-color: #222222;
-    
 }
 
 .select-span {
     position: relative;
 }
 
-.select-span::after {
-    content: '\25BC';
-    font-family: Arial;
-    font-size: 12px;
-    position: absolute;
-    top: 2px;
-    right: 6px;
-    color: #777777;
-    pointer-events: none;
-}
+    .select-span::after {
+        content: '\25BC';
+        font-family: Arial;
+        font-size: 12px;
+        position: absolute;
+        top: 2px;
+        right: 6px;
+        color: #777777;
+        pointer-events: none;
+    }

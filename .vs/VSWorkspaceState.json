@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\games"
+    "\\applications\\css",
+    "\\css"
   ],
-  "SelectedNode": "\\css",
+  "SelectedNode": "\\css\\root-style.css",
   "PreviewInSolutionExplorer": false
 }

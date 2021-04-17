@@ -1,5 +1,7 @@
 jQuery(document).ready(function ($) {
 
+    new Splide('#splide').mount();
+
     /* toggle transparant navbar on scroll */
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
